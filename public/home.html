@@ -1,0 +1,44 @@
+<style type="text/css">
+
+	h1{
+		margin-left: 10px;
+	}
+</style>
+<div class="container-fluid" ng-controller="findBookController" ng-init="findMyBook()" >
+  <div class="jumbotron">
+
+    <h1>Demo Library</h1>
+
+  </div>
+
+<table class="table" >
+<thead>
+<tr>
+	<th>Ref No</th>
+	<th>Book Name</th>
+	<th>Auth Name</th>
+	<th>Stream</th>
+	<th>Rack No</th>
+	<th>Copies</th>
+	<th>Published By</th>
+</tr>
+</thead>
+<tbody>
+	<tr ng-repeat="items in data">
+		<td>{{items.REFNO}}</td>
+		<td>{{items.BOOKNAME}}</td>
+		<td>{{items.AUTHNAME}}</td>
+		 <td>{{items.STREAM}}</td>
+		<td>{{items.RACKNO}}</td>
+		<td>{{items.COPIES}}</td>
+		<td>{{items.PUBLISHEDBY}}</td>
+	</tr>
+
+</tbody>
+</table>
+</div>
+
+</div>
+</div>
+
+</div>

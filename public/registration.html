@@ -1,0 +1,57 @@
+<style type="text/css">
+
+h2{
+    color: black;
+}
+</style>
+
+<div class="row" style="margin-top:20px" ng-controller="registration">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <form role="form">
+            <fieldset>
+                <h2>Please Sign UP</h2>
+                <hr class="colorgraph">
+                 <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control input-lg" placeholder="First Name" ng-model="reg.FIRSTNAME">
+                </div>
+                   <div class="form-group">
+                    <input type="text" name="name" id="lname" class="form-control input-lg" placeholder="Last Name" ng-model="reg.LASTNAME">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" ng-model="reg.EMAIL" ng-blur="emailCheck()">
+                </div>
+                  <div class="alert alert-danger" id="mail" style="display:none">
+                       <strong>Warning!</strong> please enter a proper format of email
+                  </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" ng-model="reg.PASSWORD">
+                </div>
+                 <div class="alert alert-danger" id="pass" style="display:none">
+                     <strong>Warning!</strong> please enter alphnumaric password with atleast one special character
+                </div>
+
+
+
+                <hr class="colorgraph">
+                <div class="row">
+
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a ui-sref="signup" class="btn btn-lg btn-primary btn-block" ng-click="register()">Register</a>
+                    </div>
+                     <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a ui-sref="login" class="btn btn-lg btn-success btn-block" >Sign In</a>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+     <div class="alert alert-success" id="success" style="display:none">
+                 <strong>Success</strong> Successfully Registered
+            </div>
+ <div class="alert alert-danger alert-dismissable" id="confirm" style="display:none">
+            Warning! password did not match.
+        </div>
+         <div class="alert alert-danger alert-dismissable" id="emailExist" style="display:none">
+            Warning! this email is alredy exist.
+        </div>
+</div>

@@ -1,0 +1,103 @@
+<style type="text/css">
+.control-label{
+    color: black;
+  }
+</style>
+
+<form class="form-horizontal" ng-controller="issueBookController">
+<fieldset>
+
+<!-- Form Name -->
+<legend style="color:white;text-align: center">Issue Book</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Ref. No</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Ref. No" class="form-control input-md" required="" ng-model="issueNewBook.REFNO">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Book Name" class="form-control input-md" required="" ng-model="issueNewBook.BOOKNAME">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Author Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Author Name" class="form-control input-md" required="" ng-model="issueNewBook.AUTHNAME">
+
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Copies</label>
+  <div class="col-md-4">
+  <input id="number" name="textinput" type="number" placeholder="Copies" class="form-control input-md" required="" ng-model="issueNewBook.COPIES">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Student Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Student Name" class="form-control input-md" required="" ng-model="issueNewBook.STUDENTNAME">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Student Registration No</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Student Registration No" class="form-control input-md" required="" ng-model="issueNewBook.REGISTRATION">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Issue Date</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="date" placeholder="Issue Date" class="form-control input-md" required="" ng-model="issueNewBook.ISSUEDATE">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Return Date</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="date" placeholder="Return Date" class="form-control input-md" required="" ng-model="issueNewBook.RETURNDATE">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Issued By Employee ID</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Issue By Employee ID" class="form-control input-md" required="" ng-model="issueNewBook.ISSUEDEMPID">
+
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-success" ng-click="issueMyBook()">Save</button>
+    <button id="button2id" name="button2id" class="btn btn-warning">Reset</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

@@ -1,0 +1,122 @@
+<style type="text/css">
+.control-label{
+    color: black;
+  }
+</style>
+<div ng-controller="addBookController">
+<form class="form-horizontal" >
+<fieldset>
+
+<!-- Form Name -->
+<legend style="color:white; text-align: center">Add New Book Details</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Ref. No</label>
+  <div class="col-md-4">
+  <input   type="text" placeholder="Ref. No" class="form-control input-md" required="" ng-model="addNewBook.REFNO">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Name</label>
+  <div class="col-md-4">
+<input  type="text" placeholder="Book Name" class="form-control input-md" required="" ng-model="addNewBook.BOOKNAME">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Author Name</label>
+  <div class="col-md-4">
+  <input   type="text" placeholder="Author Name" class="form-control input-md" required="" ng-model="addNewBook.AUTHNAME">
+
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Copies</label>
+  <div class="col-md-4">
+  <input  type="number" placeholder="Copies" class="form-control input-md" required="" ng-model="addNewBook.COPIES">
+
+  </div>
+</div>
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Publication Year</label>
+  <div class="col-md-4">
+  <input   type="text" placeholder="Publication Year" class="form-control input-md" required="" ng-model="addNewBook.PUBLICATIONYEAR">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Published By </label>
+  <div class="col-md-4">
+  <input  type="text" placeholder="Published By " class="form-control input-md" required="" ng-model="addNewBook.PUBLISHEDBY">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Stream</label>
+  <div class="col-md-4">
+    <select class="form-control" ng-model="addNewBook.STREAM">
+      <option value="IT">IT</option>
+      <option value="Management">Management</option>
+      <option value="Medical">Medical</option>
+    </select>
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Rack No</label>
+  <div class="col-md-4">
+  <input   type="text" placeholder="Rack No" class="form-control input-md" required="" ng-model="addNewBook.RACKNO">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Employee ID</label>
+  <div class="col-md-4">
+  <input   type="text" placeholder="Add By Employee ID" class="form-control input-md" required="" ng-model="addNewBook.EMPID">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Add By Employee NAME </label>
+  <div class="col-md-4">
+  <input  n type="text" placeholder="Add By Employee Name" class="form-control input-md" required="" ng-model="addNewBook.EMPNAME">
+
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Add Date</label>
+  <div class="col-md-4">
+  <input   type="date" placeholder="Add Date" class="form-control input-md" required="" ng-model="addNewBook.ADDDATE">
+
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button  class="btn btn-success" ng-click="addBook()">Save</button>
+
+  </div>
+</div>
+
+</fieldset>
+</form>
+</div>

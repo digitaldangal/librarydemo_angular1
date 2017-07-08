@@ -1,0 +1,93 @@
+<style type="text/css">
+.control-label{
+    color: black;
+  }
+</style>
+<form class="form-horizontal" ng-controller="bookReturnController">
+<fieldset>
+
+<!-- Form Name -->
+<legend style="color:white; text-align: center">Return Book</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Ref. No</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Ref. No" class="form-control input-md" required="" ng-model="returnBook.REFNO">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Book Name" class="form-control input-md" required=""  ng-model="returnBook.BOOKNAME">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Author Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Author Name" class="form-control input-md" required=""  ng-model="returnBook.AUTHNAME">
+
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Copies</label>
+  <div class="col-md-4">
+  <input id="number" name="textinput" type="number" placeholder="Copies" class="form-control input-md" required=""  ng-model="returnBook.COPIES" >
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Student Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Student Name" class="form-control input-md" required=""  ng-model="returnBook.STUDENTNAME">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Student Registration No</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Student Registration No" class="form-control input-md" required=""  ng-model="returnBook.REGISTRATION">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Return Date</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="date" placeholder="Return Date" class="form-control input-md" required=""  ng-model="returnBook.RETURNDATE">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Retern Employee ID</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Retern Employee ID" class="form-control input-md" required=""  ng-model="returnBook.RETURNEMPID">
+
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-success" ng-click="returnMyBook()">Save</button>
+    <button id="button2id" name="button2id" class="btn btn-warning">Reset</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

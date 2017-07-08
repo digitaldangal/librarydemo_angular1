@@ -1,0 +1,100 @@
+<style type="text/css">
+.control-label{
+    color: black;
+  }
+  .fa-spinner{
+
+    margin-left: 490px;
+    margin-top: 70px;
+}
+  </style>
+<div ng-controller="findBookController">
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend style="color:white; text-align: center">Find Book</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Stream</label>
+  <div class="col-md-4">
+    <select id="selectbasic" name="selectbasic" class="form-control" ng-model="findBook.STREAM">
+      <option selected value="IT">IT</option>
+      <option value="Management">Management</option>
+      <option value="Medical">Medical</option>
+    </select>
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Book Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Book Name" class="form-control input-md" required="" ng-model="findBook.BOOKNAME">
+
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Author Name</label>
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Author Name" class="form-control input-md" required="" ng-model="findBook.AUTHNAME">
+
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button id="button1id" name="button1id" class="btn btn-success" ng-click="findMyBook()">Save</button>
+    <button id="button2id" name="button2id" class="btn btn-warning">Reset</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+<div class="container" id="response" style="display:none">
+  <div class="panel panel-primary">
+    <div class="panel-heading">All Books Here</div>
+    <div class="panel-body" >
+
+
+        <div class="container">
+
+  <table class="table" >
+    <thead>
+      <tr>
+        <th>Ref No</th>
+        <th>Book Name</th>
+        <th>Auth Name</th>
+        <th>Stream</th>
+        <th>Rack No</th>
+        <th>Copies</th>
+        <th>Published By</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="items in data">
+        <td>{{items.REFNO}}</td>
+        <td>{{items.BOOKNAME}}</td>
+        <td>{{items.AUTHNAME}}</td>
+         <td>{{items.STREAM}}</td>
+        <td>{{items.RACKNO}}</td>
+        <td>{{items.COPIES}}</td>
+        <td>{{items.PUBLISHEDBY}}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+
+
+</div>
+  </div>
+</div>
+</div>

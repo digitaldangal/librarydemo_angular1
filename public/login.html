@@ -1,0 +1,36 @@
+<style type="text/css">
+h2{
+    color: black;
+}
+</style>
+
+<div class="row" style="margin-top:20px" ng-controller="loginController">
+    <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+        <form role="form">
+            <fieldset>
+                <h2>Please Sign In</h2>
+                <hr class="colorgraph">
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email Address" ng-model="log.EMAIL">
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Password" ng-model="log.PASSWORD">
+                </div>
+
+                <hr class="colorgraph">
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a ui-sref="login" class="btn btn-lg btn-success btn-block" ng-click="login()">Sign In</a>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-6">
+                        <a ui-sref="signup" class="btn btn-lg btn-primary btn-block">Register</a>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+      <div class="alert alert-warning" id="check" style="display:none">
+                 <strong>Invalid</strong> please check your email or password
+            </div>
+</div>
